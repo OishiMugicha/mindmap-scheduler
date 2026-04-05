@@ -12,7 +12,7 @@ function MindMapNode({ id, data }: NodeProps<MindMapNodeType>) {
 
   useLayoutEffect(() => {
     if (inputRef.current) {
-      inputRef.current.style.width = `${data.label.length * 8}px`;
+      inputRef.current.style.width = `${data.label.length * 8 + 20}px`;
     }
   }, [data.label.length]);
 
